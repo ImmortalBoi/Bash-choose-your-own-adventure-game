@@ -18,7 +18,7 @@ function PerformRoute(){
     local startIndex="$1-1" 
 
     local previous_route_line="${routeArray[$startIndex+1]}"
-    previous_route_line=${previous_route_line:21}
+    previous_route_line=${previous_route_line:22}
 
     local route_prompt="${routeArray[$startIndex+2]}"
     route_prompt=${route_prompt:14}
@@ -66,10 +66,32 @@ function PerformRoute(){
             echo "Key" >> ./Assets/Inventory.txt
             readarray -t inventoryArray < ./Assets/Inventory.txt
         ;;
+        "GUN_ADD")
+            echo "Gun" >> ./Assets/Inventory.txt
+            readarray -t inventoryArray < ./Assets/Inventory.txt
+        ;;
         "DELETE_SAVE")
             sed -i '$ d' ./Assets/Routes.txt
             echo "" > ./Assets/Inventory.txt
             echo "" >> ./Assets/Routes.txt
+        ;;
+        "DEAD_GUARD_CHECK")
+            InventoryBool=$((0))
+            for item in "${inventoryArray[@]}"; do
+                if [[ "Guard's death" == "$item" ]]; then
+                    InventoryBool=$((1))
+                    break
+                fi
+            done
+        ;;
+        "GUN_CHECK")
+            InventoryBool=$((0))
+            for item in "${inventoryArray[@]}"; do
+                if [[ "Gun" == "$item" ]]; then
+                    InventoryBool=$((1))
+                    break
+                fi
+            done
         ;;
         "KEY_CHECK")
             InventoryBool=$((0))
@@ -115,7 +137,7 @@ function PerformRoute(){
             startIndex=$((startIndex+1))
             sed -i '$ d' ./Assets/Routes.txt
             echo "$startIndex" >> ./Assets/Routes.txt
-            echo "Saved successfully"
+            error="Saved successfully"
             continue
 
         elif [[ "$userInput" =~ ^(load file|load)$ ]]; then

@@ -18,7 +18,7 @@ Visit Counter: 0
 Lock Status: Unlocked
 Stat Check: 0
 Choices:3
-towards/toward/go towards them/go forward;-25
+go forward/towards/toward/go towards them/forward;-25
 go left/left;-59
 go right/right;-70
 }
@@ -144,7 +144,7 @@ Lock Status: Unlocked
 Stat Check: 0
 Choices:3
 3/three;`You go through the third one and you hear him whistle in impressed surprised behind you.`;-238
-i haven't been here before/i've never been here/i haven't seen this place before/haven't been here before/i don't know/never been here/don't choose/no/n;`He eyes you for a seemingly long moment and you look at him confidently.\nHe says okay you are the real messenger, I was just testing you, come with me" He then goes through a secret path you didn't see`;
+i haven't been here before/i've never been here/i haven't seen this place before/haven't been here before/i don't know/never been here/don't choose/no/n;`He eyes you for a seemingly long moment and you look at him confidently.\nHe says "Damn you really are the real messenger, I was just testing you, come with me" He then goes through a secret path you didn't see yet you stay behind a little just to see`;-363
 ELSE;`"I knew it" He points the gun at your head.`;-150
 }
 {
@@ -201,7 +201,7 @@ Visit Counter: 0
 Lock Status: Unlocked
 Stat Check: GUARD_TRUST_ADD
 Choices:1
-follow/follow him/go/go behind him;
+follow/follow him/go/go behind him;-312
 }
 {
 Previous Route Line: -1
@@ -223,7 +223,7 @@ Lock Status: Unlocked
 Stat Check: DEAD_GUARD_ADD
 Choices:2
 move on/move through/get stronger/man up/move/get on/move forward/survive;`You go through the 3rd door with thoughts of your daughter`;-238
-ELSE;`You shoot yourself out of guilt`;-e
+grab gun/grab/take/take gun/gun;`You bend down and take the gun`;-322
 }
 {
 Previous Route Line: -1
@@ -247,15 +247,15 @@ Choices:2
 2/two;`You try to enter the door`;-249
 }
 {
-Previous Route Line: 238
-Route Prompt: You unlock the door with a key and you enter a labratory with a doctor standing over someone on a table.\nYou recognise her as your daughter you:
-Route Asset: -n
+Previous Route Line: -238
+Route Prompt: You unlock the door with a key and you enter a labratory with a doctor standing over someone on a table.\nYou recognise her as your daughter you
+Route Asset: ./Assets/Lab_Room/lab_room_ascii_art.txt
 Visit Counter: 0
 Lock Status: Unlocked
 Stat Check: KEY_CHECK
 Choices:2
-sneak/move down/crawl/crawl around/stay silent/listen/inspect/look around;`You sneak around fearing guards`;-312
-ELSE;`"HE-" you try to shout before getting shot instantly, "Heh, you thought you could get past me?" the guard says....\nYou die looking at your daughter atleast`-e
+sneak/move down/crawl/crawl around/stay silent/listen/inspect/look around;`You sneak around fearing guards and look ahead`;-363
+ELSE;-332
 }
 {
 Previous Route Line: -1
@@ -310,21 +310,87 @@ Choices:2
 2/two;`You try to enter the door`;-249
 }
 {
-Previous Route Line:
-Route Prompt: 
-Route Asset: 
+Previous Route Line: -1
+Route Prompt: You see The Guard walk in and talk to the doctor beside the table.\nAnd before you walk in he shoots the doctor.\n"What the hell?!" you exclaim, "Take the kid" he says.\nSo you pick your daughter up and you ask why he did that, "That messenger was dead right?" he asks solemnly\n"Yes" you reply quietly, He looks at you in the eye and says "I'm tired of being in pain, I already knew... you take care of that kid and don't look behind you... you better not head north"\nYou nod and carry your daughter out and as you walk out of the cave you hear the distinct sound of a gunshot and a body dropping....\nCongratulations on saving your daughter and thanks for playing the game
+Route Asset: ./Assets/Lab_Room/dead_scientist_lab_room_ascii_art.txt
 Visit Counter: 0
 Lock Status: Unlocked
 Stat Check: 0
+Choices:1
+ELSE;-e
 }
 {
-Previous Route Line:
-Route Prompt: 
-Route Asset: 
+Previous Route Line: -1
+Route Prompt: GUN ACQUIRED \nyou took out the guard's gun and equipped it
+Route Asset: ./Assets/Triple_Path/ascii_art.txt
+Visit Counter: 0
+Lock Status: Unlocked
+Stat Check: GUN_ADD
+Choices:1
+ELSE;-238
+}
+{
+Previous Route Line: -343
+Route Prompt: "HEY YOU!! GIVE ME BACK MY DAUGHTER" you say as the frightened scientist turns around.\nyou
+Route Asset: ./Assets/Lab_Room/lab_room_ascii_art.txt
+Visit Counter: 0
+Lock Status: Unlocked
+Stat Check: DEAD_GUARD_CHECK
+Choices:1
+shoot/use gun;-353
+ELSE
+}
+{
+Previous Route Line: -1
+Route Prompt: "HE-" you try to shout before getting shot instantly, "Heh, you thought you could get past me?" the guard says....\nYou die looking at your daughter atleast
+Route Asset: ./Assets/Gun_Encounter/fight_gunshot_ascii_art.txt
 Visit Counter: 0
 Lock Status: Unlocked
 Stat Check: 0
+Choices:1
+ELSE;-e
+}
+{
+Previous Route Line: -332
+Route Prompt: "You take the gun out and shoot him before he makes any movements...\nOne more body to your kill list won't make a difference
+Route Asset: ./Assets/Lab_Room/dead_scientist_lab_room_ascii_art.txt
+Visit Counter: 0
+Lock Status: Unlocked
+Stat Check: GUN_CHECK
+Choices:1
+ELSE;`You check up on your daughter and you thankfully see she's alive...\nYou carry her out to safety and run south in the opposite direction of where the messenger came from....\nYou sucesfully saved your daughter, Congratulations and thanks for playing the game`;-e
+}
+{
+Previous Route Line: -1
+Route Prompt: The guard walks up to the scientist and they start having a heated discussion, you look at the girl on the table and just as you think of what to do,\nThe scientist takes out a syringe and injects it into himself and he instantly goes green...\nYou:
+Route Asset: ./Assets/Lab_Room/guard_scientist_lab_room.txt
+Visit Counter: 0
+Lock Status: Unlocked
+Stat Check: 0
+Choices:1
+ELSE;`You want to run but you know for a fact that girl on the table is your daughter so you stay and watch`;-373
+}
+{
+Previous Route Line: -1
+Route Prompt: The scientist suddenly transforms into a massive zombie and the guard tries to take out his gun.\nThe scientist overpowers the guard, he gets eaten and his gun falls to the floor...\nThis is all happening right beside your daughter so You
+Route Asset: ./Assets/Boss_Fight_Zombie/ascii_art.txt
+Visit Counter: 0
+Lock Status: Unlocked
+Stat Check: 0
+Choices:2
+grab gun/grab/take/take gun/gun/fight;`The monster takes interest in you and immedietly strikes you before you can grab the gun...\nYou get eaten alive like the guard and your daughter's fate remains a mystery`;-e
+wait/hide/continue hiding/cover/duck/don't do anything/stop/don't move;`The monster turns it's back towards your daughter, now's the perfect chance to grab the gun`;-384
+}
+{
+Previous Route Line: -1
+Route Prompt: You run up to the gun and before the scientist notices you, you shoot the massive zombie's head...\nAfter all, a super zombie is still a zombie and that's it's weakpoint
+Route Asset: ./Assets/Boss_Fight_Zombie/dead_ascii_art.txt
+Visit Counter: 0
+Lock Status: Unlocked
+Stat Check: 0
+Choices:1
+ELSE;`The zombie drops to the floor and you run to check up on your daughter\nShe seems fine in your eyes so you decide to carry her and run out of this cursed cave...\nBack to home, your home down south away from the north hoard...\nYou saved your daughter congratulations on playing the game and thank you`
 }
 
 
-150
+
