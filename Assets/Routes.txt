@@ -1,0 +1,330 @@
+{
+Previous Route Line: -1
+Route Prompt: Are you ready to save your daughter -this will delete your old save-? (y/n)
+Route Asset: -n
+Visit Counter: 0
+Lock Status: Unlocked
+Stat Check: 0
+Choices:3
+yes/yeah/y;`Let's start`;-228
+no/n;`We'll do this another day then`;-e
+ELSE;`Since you failed the first question, clearly the virus has already eaten your brain \nYou die not having seen your daughter`;-e
+}
+{
+Previous Route Line: -1
+Route Prompt: You see a guard hidden near the cave entrance\nyou can go towards them, to the left or the right?
+Route Asset: ./Assets/Cave_Entrance/ascii_art.txt
+Visit Counter: 0
+Lock Status: Unlocked
+Stat Check: 0
+Choices:3
+towards/toward/go towards them/go forward;-25
+go left/left;-59
+go right/right;-70
+}
+{
+Previous Route Line: -1
+Route Prompt: "HEY WHO ARE YOU?!" Says one man as he raises his gun at you \n"I'm...."
+Route Asset: ./Assets/Cave_Entrance/ascii_art.txt
+Visit Counter: 0
+Lock Status: Unlocked
+Stat Check: 0
+Choices:3
+looking for my daughter;`"Huh, are you mad? you think that you can take her from us?" He laughs as he points the gun down on you.`;-37
+one of you/one of you guys;`"You can't trick me, I know everyone here" He says then shoots you down, you die not knowing what happened to your daughter`;-e
+the messenger/messenger;`"Oh we've been expecting you sir" He says as he drops the gun and moves to the side and you walk in`;-104
+}
+{
+Previous Route Line: -1
+Route Prompt: "What do you think someone like you can do against us?" He smirks and aims the gun at your head
+Route Asset: ./Assets/Cave_Entrance/ascii_art.txt
+Visit Counter: 0
+Lock Status: Unlocked
+Stat Check: 0
+Choices:2
+join/join you guys/join you;`"Huh... this world doesn't need more scum" He says then shoots you down, you die not knowing what happened to your daughter`;-e
+nothing;`"Yeah, know your worth... here's some advice live your life and forget about messing with us" He lets you walk back home`;-48
+}
+{
+Previous Route Line: -1
+Route Prompt: You have come back to the same spot as before the interaction. \nyou have two ways still, left or right?
+Route Asset: ./Assets/Cave_Entrance/ascii_art.txt
+Visit Counter: 0
+Lock Status: Unlocked
+Stat Check: 0
+Choices:2
+left/go left;-59
+right/go right;-70
+}
+{
+Previous Route Line: -1
+Route Prompt: You go left and you don't find any other entrance, but you find a dead body with a message do you open it? (y/n)
+Route Asset: ./Assets/Cave_Side_Left/ascii_art.txt
+Visit Counter: 0
+Lock Status: Unlocked
+Stat Check: 0
+Choices:2
+yes/yeah/y;`You open it and it reads "This message is intended to be delivered to the cave at this location, you have to be warned about th-"\nyou try to read the rest but it's covered in blood so you decide to go back`;-13
+no/n;`You see nothing else so you decide to go back`;-13
+}
+{
+Previous Route Line: -1
+Route Prompt: You go right and yet you don't see anything except a big rock, what do you decide to do?
+Route Asset: ./Assets/Cave_Side_Right/ascii_art.txt
+Visit Counter: 0
+Lock Status: Unlocked
+Stat Check: 0
+Choices:3
+get back/go back/back;-13
+try to move the rock/move the big rock/move rock;-82
+inspect more/inspect;-93
+}
+{
+Previous Route Line: -1
+Route Prompt: You try to move the rock but it doesn't budge, what do you do?
+Route Asset: ./Assets/Cave_Side_Right/ascii_art.txt
+Visit Counter: 0
+Lock Status: Unlocked
+Stat Check: 0
+Choices:2
+inspect more/inspect;-93
+get back/go back/back;-13
+}
+{
+Previous Route Line: -1
+Route Prompt: You decide to inspect more and you find out that hidden in the sand is a crowbar, you decide to use it on the rock and it moves slightly, do you go in or go back?
+Route Asset: ./Assets/Cave_Side_Right/ascii_art.txt
+Visit Counter: 0
+Lock Status: Unlocked
+Stat Check: 0
+Choices:2
+go back/back;`"The rock shifts as you go back"`;-13
+go in/in;"The rock shifts as you go in";-238
+}
+{
+Previous Route Line: -1
+Route Prompt: "I hear the situation up north is getting very bad with the zombies" the guard says walking right beside you through the door
+Route Asset: ./Assets/Single_Path/ascii_art.txt
+Visit Counter: 0
+Lock Status: Unlocked
+Stat Check: 0
+Choices:3
+yes/yeah/y;`"Yeah the zombie situation is getting bad everywhere" you try to say as if you are the messenger.`;-116
+no/n;`"Getting down here wasn't that bad" you try to act tough.`;-116
+ELSE;`He ignores what you said and says "Yet you still made it huh"`;-116
+}
+{
+Previous Route Line:-1
+Route Prompt: "You saying that makes me wonder how you managed to get past the hoard, what's your secret?" \nHe asks while chuckling but intently listening and you reply
+Route Asset: ./Assets/Single_Path/ascii_art.txt
+Visit Counter: 0
+Lock Status: Unlocked
+Stat Check: 0
+Choices:2
+vague/can't say/don't know/magic/secret/can't tell you/mute/sheer luck/lucky/i'm lucky/luck i guess/luck;`He gives a hearty laugh \n"Well spare that luck to some of us here"`;-127
+ELSE;`He stops in his tracks and looks at you and says "You think you can fool me?"\nHe raises the gun at you.`;-150
+}
+{
+Previous Route Line: -1
+Route Prompt: "So is the news good or bad?" he says looking at you hoping for information, you then say
+Route Asset: ./Assets/Single_Path/ascii_art.txt
+Visit Counter: 0
+Lock Status: Unlocked
+Stat Check: 0
+Choices:2
+can't tell you/ask your boss/mute/can't say/secret/shush/vague;`He chuckles and says "seems like you're the real deal"`;-138
+ELSE;`He raises his gun at you and says "You aren't following the agreed upon rules, who are you?"`;-150
+}
+{
+Previous Route Line: -1
+Route Prompt: "Well since you've been here before I trust that you know how to continue forward, choose the correct door."\nYou decide
+Route Asset: ./Assets/Triple_Path/ascii_art.txt
+Visit Counter: 0
+Lock Status: Unlocked
+Stat Check: 0
+Choices:3
+3/three;`You go through the third one and you hear him whistle in impressed surprised behind you.`;-238
+i haven't been here before/i've never been here/i haven't seen this place before/haven't been here before/i don't know/never been here/don't choose/no/n;`He eyes you for a seemingly long moment and you look at him confidently.\nHe says okay you are the real messenger, I was just testing you, come with me" He then goes through a secret path you didn't see`;
+ELSE;`"I knew it" He points the gun at your head.`;-150
+}
+{
+Previous Route Line: -1
+Route Prompt: The gun is pointed straight at your face. Any mistake will result in you instantly getting shot down, what do you do?
+Route Asset: ./Assets/Gun_Encounter/negotiation_bad_ascii_art.txt
+Visit Counter: 0
+Lock Status: Unlocked
+Stat Check: 0
+Choices:3
+please/negotiate/discuss/argue/plead/i negotiate/i discuss/i argue/i plead;`"Please give me a chanc-" you plead before he shouts "GET ON THE FLOOR", "MY DAUGHTER IS HERE" you shout back looking at his eyes and he pauses`;-162
+fight/punch/kick;`He shoots you down instantly, you die not knowing anything about your daughter`;-e
+duck down/duck out of the way/dodge gun/dodge/duck/move/move out of the way;`You decide to dodge out of the gun's way`;-206
+}
+{
+Previous Route Line: -1
+Route Prompt: "What did you say?" He looks at you with pain, your surprised face is apparent but you decide to say
+Route Asset: ./Assets/Gun_Encounter/negotiation_medium_ascii_art.txt
+Visit Counter: 0
+Lock Status: Unlocked
+Stat Check: 0
+Choices:3
+my daughter has been kidnapped/daughter kidnapped/my daughter is here/daughter is here/daughter somewhere here;`"What, that girl is your daughter?" your face lights up on hearing that sentence\nHe looks in horror at you and says "Sorry"`;-174
+fight/punch/kick;`He's shocked at your kick but he shoots his gun and it misses`;-206
+duck down/duck out of the way/dodge gun/dodge/duck/move/move out of the way;`He looks ultra surprised`;-206
+}
+{
+Previous Route Line: -1
+Route Prompt: "Why are you apologizing" you ask confused, "We're expirementing on her, I don't know how you managed to know that we wanted a messenger but clearly you didn't read their message" He replies.\nYou say
+Route Asset: ./Assets/Gun_Encounter/negotiation_good_ascii_art.txt
+Visit Counter: 0
+Lock Status: Unlocked
+Stat Check: 0
+Choices:2
+he's dead/i knew by the body/body/dead/blood/bloody/the message was bloody/he was dead/there was a body;`He looks at you intently, judging whether you were lying or not and eventually comes to a decision\nHe takes the gun and shoots himself right infront of you and dies on the spot\nYou are very surprised and confused, yet you decide to move on while thinking about your daughter`;-238
+yes/y/yeah/i didn't know/i don't know/no/i have no clue/what's the message/message/no idea/i just saw him;`The guard says "If that man is dead then all hope is lost... your daughter is our only hope, you have to understand" He looks at you pleading`;-185
+}
+{
+Previous Route Line: -1
+Route Prompt: "Wait what do you mean by expirementing on her" you say just now realising his words\nHe looks away in pain but manages to say "She's our only hope, she can be our saviour" \n"How can you say that, do you not have any family, any children, any siblings" you say calmly, He looks at you in anger and says "YOU THINK I DON'T UNDERSTAND THE WEIGHT OF THIS?!"\nYou are taken aback but you calmly say "Help me then..."\nHe says one word "Why?"
+Route Asset: ./Assets/Gun_Encounter/negotiation_good_ascii_art.txt
+Visit Counter: 0
+Lock Status: Unlocked
+Stat Check: 0
+Choices:2
+good man/good person/because you're a good person/because you're a good man;`He hears your words and he takes the gun and shoots himself in the head.\nYou are very surprised and confused, yet you decide to move on while thinking about your daugh`;-238
+bad man/bad person/because you're a bad person/because you're a bad man;`He lowers the gun and accepts your offer`;-196
+}
+{
+Previous Route Line: -1
+Route Prompt: YOU HAVE EARNED THE GUARD'S TRUST\n"Follow me" the guard says and goes through a secret hidden door, you
+Route Asset: ./Assets/Single_Path/ascii_art.txt
+Visit Counter: 0
+Lock Status: Unlocked
+Stat Check: GUARD_TRUST_ADD
+Choices:1
+follow/follow him/go/go behind him;
+}
+{
+Previous Route Line: -1
+Route Prompt: You have milliseconds to decide
+Route Asset: ./Assets/Gun_Encounter/negotiation_bad_ascii_art.txt
+Visit Counter: 0
+Lock Status: Unlocked
+Stat Check: 0
+Choices:2
+i shoot/shoot/grab gun and shoot/grab gun/grab;`You grab the gun`;-217
+ELSE;`He grabs the gun and shoots you in the head, instantly killing you before you find out more about your daughter`;-e
+}
+{
+Previous Route Line: -1
+Route Prompt: You shoot the gun instantly killing him, the horror of what you've just done is dawning on you...\n
+Route Asset: ./Assets/Gun_Encounter/fight_gunshot_ascii_art.txt
+Visit Counter: 0
+Lock Status: Unlocked
+Stat Check: DEAD_GUARD_ADD
+Choices:2
+move on/move through/get stronger/man up/move/get on/move forward/survive;`You go through the 3rd door with thoughts of your daughter`;-238
+ELSE;`You shoot yourself out of guilt`;-e
+}
+{
+Previous Route Line: -1
+Route Prompt: Deleting old save data, press any button to continue
+Route Asset: -n
+Visit Counter: 0
+Lock Status: Unlocked
+Stat Check: DELETE_SAVE
+Choices:1
+ELSE;-13
+}
+{
+Previous Route Line: -1
+Route Prompt: You enter the door and you see two doors 
+Route Asset: ./Assets/Double_Path/ascii_art.txt
+Visit Counter: 0
+Lock Status: Unlocked
+Stat Check: 0
+Choices:2
+1/one;-260
+2/two;`You try to enter the door`;-249
+}
+{
+Previous Route Line: 238
+Route Prompt: You unlock the door with a key and you enter a labratory with a doctor standing over someone on a table.\nYou recognise her as your daughter you:
+Route Asset: -n
+Visit Counter: 0
+Lock Status: Unlocked
+Stat Check: KEY_CHECK
+Choices:2
+sneak/move down/crawl/crawl around/stay silent/listen/inspect/look around;`You sneak around fearing guards`;-312
+ELSE;`"HE-" you try to shout before getting shot instantly, "Heh, you thought you could get past me?" the guard says....\nYou die looking at your daughter atleast`-e
+}
+{
+Previous Route Line: -1
+Route Prompt: You enter a room with a box and a vent, you see somthing behind the vent
+Route Asset: ./Assets/Puzzle_room/default_ascii_art.txt
+Visit Counter: 0
+Lock Status: Unlocked
+Stat Check: 0
+Choices:1
+move box/move/move box right/move box to the right/move it right/move it under the vent/move box under the vent;-270
+}
+{
+Previous Route Line: -1
+Route Prompt: You have moved the box to the right right under the vent
+Route Asset: ./Assets/Puzzle_room/closed_box_ascii_art.txt
+Visit Counter: 0
+Lock Status: Unlocked
+Stat Check: 0
+Choices:2
+get up on box/get up/open vent/move vent/try to open;`The vent has screws on it preventing you from opening it`;-270
+open box/open;`You open the box and find a screwdiver inside`;-281
+}
+{
+Previous Route Line: -1
+Route Prompt: You have opened the box and found a screwdrive inside
+Route Asset: ./Assets/Puzzle_room/opened_box_ascii_art.txt
+Visit Counter: 0
+Lock Status: Unlocked
+Stat Check: 0
+Choices:1
+ELSE;-291
+}
+{
+Previous Route Line: -1 
+Route Prompt: You have gotten the key inside in the vent, this will help with opening the door
+Route Asset: ./Assets/Puzzle_room/opened_everything_ascii_art.txt
+Visit Counter: 0
+Lock Status: Unlocked
+Stat Check: KEY_ADD
+Choices:1
+ELSE;`You decide to go back to the previous room`;-301
+}
+{
+Previous Route Line: -1
+Route Prompt: You enter the door and you see two doors 
+Route Asset: ./Assets/Double_Path/ascii_art.txt
+Visit Counter: 0
+Lock Status: Unlocked
+Stat Check: 0
+Choices:2
+1/one;`You already entered here`;-301
+2/two;`You try to enter the door`;-249
+}
+{
+Previous Route Line:
+Route Prompt: 
+Route Asset: 
+Visit Counter: 0
+Lock Status: Unlocked
+Stat Check: 0
+}
+{
+Previous Route Line:
+Route Prompt: 
+Route Asset: 
+Visit Counter: 0
+Lock Status: Unlocked
+Stat Check: 0
+}
+
+
+150
