@@ -265,7 +265,7 @@ Visit Counter: 0
 Lock Status: Unlocked
 Stat Check: 0
 Choices:1
-move box/move/move box right/move box to the right/move it right/move it under the vent/move box under the vent;-270
+push/push box/move box/move/move box right/move box to the right/move it right/move it under the vent/move box under the vent;-270
 }
 {
 Previous Route Line: -1
@@ -393,4 +393,4 @@ ELSE;`The zombie drops to the floor and you run to check up on your daughter\nSh
 }
 
 
-
+185

@@ -137,7 +137,7 @@ function PerformRoute(){
             startIndex=$((startIndex+1))
             sed -i '$ d' ./Assets/Routes.txt
             echo "$startIndex" >> ./Assets/Routes.txt
-            error="Saved successfully"
+            error="Saved successfully\n"
             continue
 
         elif [[ "$userInput" =~ ^(load file|load)$ ]]; then
@@ -198,11 +198,12 @@ function PerformRoute(){
             result=${result:1}
             result=${result::-1}
             echo -e "$result"
-            n=${#result}
-            for((i=0;i<n;i++)); do
-                i=$((i*10))
-                sleep 1s
-            done
+            # n=${#result}
+            # for((i=0;i<n;i++)); do
+            #     i=$((i*10))
+            #     sleep 1s
+            # done
+            read -r
 
         elif [ "${result:0:1}" == "-" ]; then
             # Deal with the flag
